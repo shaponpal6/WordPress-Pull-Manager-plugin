@@ -1,0 +1,80 @@
+.sp-poll-title {
+    text-align: center;
+}
+.sp-poll-wrap {
+    margin-bottom: 60px;
+}
+.sp-view-vote {
+    border: 1px solid #333;
+    display: inline;
+    padding: 3px 6px;
+    margin-top: 3px;
+    position: absolute;
+    background: #f7f7f7;
+    cursor: pointer;
+}
+.sp-poll-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    background: #ccc;
+    width: 100%;
+    height: 50px;
+    margin: .25em 0;
+    color: #fff;
+    position: relative;
+    transition: width 2s, background .2s;
+    -webkit-transform: translate3d(0, 0, 0);
+    clear: both;
+}
+.sp-poll-bar:nth-of-type(2n) {
+    width: 100%;
+    float: left;
+    background: #c1cc89;
+}
+.sp-poll-bar .sp-poll-label {
+    font-size: .75em;
+    flex-grow: 1;
+    padding: 1em;
+    background: transparent;
+    float: left;
+    width: 8em;
+    display: inline-block;
+    position: absolute;
+    z-index: 2;
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+}
+.sp-poll-bar .sp-vote {
+    font-size: .75em;
+    flex-grow: 1;
+    padding: 1em;
+    cursor: pointer;
+    background: #0a5f10;
+    float: right;
+    display: inline-block;
+    position: relative;
+    z-index: 2;
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+}
+.sp-poll-bar .sp-poll-label.light {
+    background: #575757;
+}
+
+.sp-poll-count {
+    flex-grow: 8;
+    width: 100%;
+    float: left;
+}
+.sp-poll-percent {
+    background: #ed7669;
+    font-size: .75em;
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+    height: 50px;
+    min-width: 20%;
+    float: left;
+    text-align: right;
+    padding: 15px;
+}
